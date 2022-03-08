@@ -1,0 +1,64 @@
+@font-face {   
+    src: url(../fonts/Lobster.ttf);
+    font-family: Lobster;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+body{
+    font-family: Ubuntu;
+    color: aliceblue;
+}
+
+h2{
+    margin: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.newsImg { 
+    object-fit: cover;
+    width: 450px;
+    height: 450px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.headBlock {
+    font-family: Lobster;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background:  #388697;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+.newsBlock {
+    background: #77ACB8;
+    width: 450px;
+    border-bottom-right-radius: 85px;
+    border-bottom-left-radius: 85px;
+    margin: 30px;
+    text-align: center;
+}
+.newsBlock:hover{
+    width: 550px;
+    cursor: default;
+    border-radius: 0;
+    transition: 0.5s;
+}
+.newsBlock:hover img {
+    cursor: pointer;
+    width: 550px;
+    transition: 0.5s;
+}
+.newsBlock:hover h2{
+    margin: 30px;
+    transition: 0.5s;
+}
